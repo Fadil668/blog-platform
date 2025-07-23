@@ -23,7 +23,7 @@ export const registerUser = async(req, res) =>{
 
         const token = jwt.sign({email: email, _id: newUser._id}, process.env.JWT_SECRET);
         res.cookie("token", token, {
-            httpOnly: true, secure: true, sameSite: "strict"
+            httpOnly: false, secure: true, sameSite: "none"
         });
 
         return res.status(200).json({user: {email: newUser.email, _id: newUser._id, role: newUser.role, phone: newUser.phone, photo: newUser.photo}, token: token, message: "User Registered successfully"});

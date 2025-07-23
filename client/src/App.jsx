@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Blogs from "./pages/Blogs";
-import About from "./pages/about";
+import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Creator from "./pages/Creator";
 import Login from "./pages/Login";

@@ -23,11 +23,13 @@ function App() {
   const { blogs, isAuthenticated } = useAuth();
   console.log(blogs);
 
+  //hi
+
   return (
     <>
       <div>
         <Toaster position="top-center" reverseOrder={false} />
-
+        
         {!hideNavbarFooter && <Navbar />}
 
         <Routes>
